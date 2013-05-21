@@ -36,7 +36,7 @@ POST_UNINSTALL = :
 build_triplet = i686-pc-linux-gnu
 host_triplet = i686-pc-linux-gnu
 target_triplet = i686-pc-linux-gnu
-#am__append_1 = libwebpdspdecode.la
+am__append_1 = libwebpdspdecode.la
 subdir = src/dsp
 DIST_COMMON = $(common_HEADERS) $(noinst_HEADERS) \
 	$(srcdir)/Makefile.am $(srcdir)/Makefile.in
@@ -80,14 +80,14 @@ am__objects_3 = libwebpdspdecode_la-cpu.lo libwebpdspdecode_la-dec.lo \
 	libwebpdspdecode_la-upsampling_neon.lo \
 	libwebpdspdecode_la-upsampling_sse2.lo \
 	libwebpdspdecode_la-yuv.lo
-#am_libwebpdspdecode_la_OBJECTS =  \
-#	$(am__objects_3)
+am_libwebpdspdecode_la_OBJECTS =  \
+	$(am__objects_3)
 libwebpdspdecode_la_OBJECTS = $(am_libwebpdspdecode_la_OBJECTS)
 libwebpdspdecode_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
 	$(AM_CFLAGS) $(CFLAGS) $(libwebpdspdecode_la_LDFLAGS) \
 	$(LDFLAGS) -o $@
-#am_libwebpdspdecode_la_rpath =
+am_libwebpdspdecode_la_rpath =
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -149,13 +149,13 @@ HEADERS = $(common_HEADERS) $(noinst_HEADERS)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /windows/lance/webp/final/webp-src/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /windows/lance/webp/final/webp-src/missing --run autoconf
-AUTOHEADER = ${SHELL} /windows/lance/webp/final/webp-src/missing --run autoheader
-AUTOMAKE = ${SHELL} /windows/lance/webp/final/webp-src/missing --run automake-1.11
+AUTOCONF = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/missing --run autoconf
+AUTOHEADER = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/missing --run autoheader
+AUTOMAKE = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/missing --run automake-1.11
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -193,7 +193,7 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /windows/lance/webp/final/webp-src/missing --run makeinfo
+MAKEINFO = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -225,10 +225,10 @@ TIFF_LIBS =
 USE_EXPERIMENTAL_CODE = 
 USE_SWAP_16BIT_CSP = 
 VERSION = 0.3.0
-abs_builddir = /windows/lance/webp/final/webp-src/src/dsp
-abs_srcdir = /windows/lance/webp/final/webp-src/src/dsp
-abs_top_builddir = /windows/lance/webp/final/webp-src
-abs_top_srcdir = /windows/lance/webp/final/webp-src
+abs_builddir = /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/src/dsp
+abs_srcdir = /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/src/dsp
+abs_top_builddir = /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src
+abs_top_srcdir = /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -258,7 +258,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /windows/lance/webp/final/webp-src/install-sh
+install_sh = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -295,9 +295,9 @@ libwebpdsp_la_SOURCES = $(COMMON_SOURCES) $(ENC_SOURCES)
 noinst_HEADERS = ../dec/decode_vp8.h ../webp/decode.h
 libwebpdsp_la_LDFLAGS = -lm
 libwebpdsp_la_CPPFLAGS = $(USE_EXPERIMENTAL_CODE) $(USE_SWAP_16BIT_CSP)
-#libwebpdspdecode_la_SOURCES = $(COMMON_SOURCES)
-#libwebpdspdecode_la_LDFLAGS = $(libwebpdsp_la_LDFLAGS)
-#libwebpdspdecode_la_CPPFLAGS = $(libwebpdsp_la_CPPFLAGS)
+libwebpdspdecode_la_SOURCES = $(COMMON_SOURCES)
+libwebpdspdecode_la_LDFLAGS = $(libwebpdsp_la_LDFLAGS)
+libwebpdspdecode_la_CPPFLAGS = $(libwebpdsp_la_CPPFLAGS)
 all: all-am
 
 .SUFFIXES:

@@ -37,10 +37,10 @@ POST_UNINSTALL = :
 build_triplet = i686-pc-linux-gnu
 host_triplet = i686-pc-linux-gnu
 target_triplet = i686-pc-linux-gnu
-#am__append_1 = mux
-#am__append_2 = demux
-#am__append_3 = libwebpdecoder.la
-#am__append_4 = libwebpdecoder.pc
+am__append_1 = mux
+am__append_2 = demux
+am__append_3 = libwebpdecoder.la
+am__append_4 = libwebpdecoder.pc
 subdir = src
 DIST_COMMON = $(common_HEADERS) $(libwebpinclude_HEADERS) \
 	$(noinst_HEADERS) $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
@@ -96,18 +96,18 @@ am__v_lt_0 = --silent
 libwebp_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(libwebp_la_LDFLAGS) $(LDFLAGS) -o $@
-#libwebpdecoder_la_DEPENDENCIES =  \
-#	dec/libwebpdecode.la \
-#	dsp/libwebpdspdecode.la \
-#	utils/libwebputilsdecode.la
+libwebpdecoder_la_DEPENDENCIES =  \
+	dec/libwebpdecode.la \
+	dsp/libwebpdspdecode.la \
+	utils/libwebputilsdecode.la
 am_libwebpdecoder_la_OBJECTS =
 libwebpdecoder_la_OBJECTS = $(am_libwebpdecoder_la_OBJECTS)
 libwebpdecoder_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
 	$(AM_CFLAGS) $(CFLAGS) $(libwebpdecoder_la_LDFLAGS) $(LDFLAGS) \
 	-o $@
-#am_libwebpdecoder_la_rpath = -rpath \
-#	$(libdir)
+am_libwebpdecoder_la_rpath = -rpath \
+	$(libdir)
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
@@ -177,13 +177,13 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /windows/lance/webp/final/webp-src/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /windows/lance/webp/final/webp-src/missing --run autoconf
-AUTOHEADER = ${SHELL} /windows/lance/webp/final/webp-src/missing --run autoheader
-AUTOMAKE = ${SHELL} /windows/lance/webp/final/webp-src/missing --run automake-1.11
+AUTOCONF = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/missing --run autoconf
+AUTOHEADER = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/missing --run autoheader
+AUTOMAKE = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/missing --run automake-1.11
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -221,7 +221,7 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /windows/lance/webp/final/webp-src/missing --run makeinfo
+MAKEINFO = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -253,10 +253,10 @@ TIFF_LIBS =
 USE_EXPERIMENTAL_CODE = 
 USE_SWAP_16BIT_CSP = 
 VERSION = 0.3.0
-abs_builddir = /windows/lance/webp/final/webp-src/src
-abs_srcdir = /windows/lance/webp/final/webp-src/src
-abs_top_builddir = /windows/lance/webp/final/webp-src
-abs_top_srcdir = /windows/lance/webp/final/webp-src
+abs_builddir = /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/src
+abs_srcdir = /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/src
+abs_top_builddir = /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src
+abs_top_srcdir = /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -286,7 +286,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /windows/lance/webp/final/webp-src/install-sh
+install_sh = ${SHELL} /windows/lance/webp/Image-WebP-0.1/Image-WebP/webp-src/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -332,12 +332,12 @@ libwebp_la_LIBADD = dec/libwebpdecode.la dsp/libwebpdsp.la \
 libwebp_la_LDFLAGS = -no-undefined -version-info 4:2:0
 libwebpincludedir = $(includedir)/webp
 pkgconfig_DATA = libwebp.pc $(am__append_4)
-#libwebpdecoder_la_SOURCES = 
-#libwebpdecoder_la_LIBADD =  \
-#	dec/libwebpdecode.la \
-#	dsp/libwebpdspdecode.la \
-#	utils/libwebputilsdecode.la
-#libwebpdecoder_la_LDFLAGS = -no-undefined -version-info 0:0:0
+libwebpdecoder_la_SOURCES = 
+libwebpdecoder_la_LIBADD =  \
+	dec/libwebpdecode.la \
+	dsp/libwebpdspdecode.la \
+	utils/libwebputilsdecode.la
+libwebpdecoder_la_LDFLAGS = -no-undefined -version-info 0:0:0
 all: all-recursive
 
 .SUFFIXES:
